@@ -16,5 +16,4 @@ def vectorAddition(vectora,vectorb):
         resultant[i] = vectora[i] + vectorb[i]
     print ("resultant = ", end = "")
     print (resultant)
-        
-        
+vectorAddition(a,b)
