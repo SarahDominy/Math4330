@@ -1,2 +1,2 @@
 # Math4330
-Homework and Projects
+Homework, projects, and practice exercises for Math4330/Mathematical Computing
