@@ -14,6 +14,20 @@ def twonorm(vectora):
             result = result + vectora[i] ** 2
     result = result ** (1/2)
     return result
+def scalarvectormult(vectora,scalarb):
+    """
+    This algorithm multiplies a vector by a scalar value
+    it does this by multiplying each value in the vector by the scalar value.
+    
+    Args:
+        A vector representing a list of numbers and one scalar number.
+    Returns:
+        A vector where each of the values has been multiplied by the scalar.
+    """
+    result = [0] * len(vectora)
+    for i in range (len(vectora)):
+        result[i] = vectora[i] * scalarb
+    return result
     
 def normalize(vectora):
 #calculates the normal vector
@@ -28,8 +42,7 @@ def normalize(vectora):
     else:
         norm = twonorm(vectora)
 #replace this with scalar_vector_multi(vectora)
-        for i in range (0,len(vectora)):
-            vectora[i] = vectora[i]/norm
+        vectora = scalarvectormult(vectora, (1/norm))
     return vectora
 
 print(normalize(a))
