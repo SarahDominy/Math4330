@@ -12,7 +12,7 @@ def twonorm(vectora):
     result = 0
     for i in range (0,len(vectora)):
             result = result + vectora[i] ** 2
-    result = result ** (1/2)
+    result = result ** (0.5)
     return result
 def scalarvectormult(vectora,scalarb):
     """
